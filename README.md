@@ -39,23 +39,23 @@ graph TD
 ## 👤 Use Case Diagram
 
 ```mermaid
-usecase
-    actor "Race Engineer (User)" as RE
-    actor "Driver" as DR
+graph TD
+    RE([Race Engineer])
+    DR([Driver])
 
-    package "AURA System" {
-        usecase "Monitor Live Telemetry" as UC1
-        usecase "Predict Opponent Mistake" as UC2
-        usecase "Forecast Best Attack Window" as UC3
-        usecase "Optimize Pit Strategy" as UC4
-    }
+    subgraph AURA System
+        UC1(Monitor Live Telemetry)
+        UC2(Predict Opponent Mistake)
+        UC3(Forecast Best Attack Window)
+        UC4(Optimize Pit Strategy)
+    end
 
     RE --> UC1
     RE --> UC2
     RE --> UC3
     RE --> UC4
-    UC3 --> DR : "Relay Radio Commands"
-    UC4 --> DR : "Call to Box"
+    UC3 -.->|Relay Radio Commands| DR
+    UC4 -.->|Call to Box| DR
 ```
 
 ---
