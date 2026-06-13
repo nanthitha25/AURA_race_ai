@@ -1,0 +1,16 @@
+{
+    "VER": {
+        "pressure_events": 42,
+        "mistakes": 5,
+        "avg_pressure_laptime_loss": 0.12,
+        "braking_change": 0.08,
+        "pressure_style": "aggressive"
+    },
+    "NOR": {
+        "pressure_events": 38,
+        "mistakes": 12,
+        "avg_pressure_laptime_loss": 0.42,
+        "braking_change": 0.18,
+        "pressure_style": "defensive"
+    }
+}

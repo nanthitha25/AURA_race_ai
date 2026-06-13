@@ -1,0 +1,23 @@
+{
+    "drivers": {
+        "NOR": {
+            "weaknesses": {
+                "late_braking": 0.78,
+                "slow_corner_exit": 0.65,
+                "defensive_pressure": 0.72
+            },
+            "strong_points": {
+                "high_speed_corners": 0.90
+            }
+        },
+        "VER": {
+            "weaknesses": {
+                "tyre_overheating": 0.35
+            },
+            "strong_points": {
+                "race_start": 0.92,
+                "late_braking": 0.88
+            }
+        }
+    }
+}

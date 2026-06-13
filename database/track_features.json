@@ -1,0 +1,14 @@
+{
+    "Monaco": {
+        "T10": {
+            "corner_type": "hairpin",
+            "braking_zone": true,
+            "overtake_factor": 0.78
+        },
+        "T3": {
+            "corner_type": "medium",
+            "braking_zone": false,
+            "overtake_factor": 0.25
+        }
+    }
+}

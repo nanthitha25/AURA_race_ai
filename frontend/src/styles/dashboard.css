@@ -1,0 +1,140 @@
+:root {
+  --bg: #0a0a0c;
+  --panel-bg: #111114;
+  --border: #222;
+  --accent: #ff2a2a;
+  --text: #e0e0e0;
+  --text-muted: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+.race-state {
+  display: flex;
+  gap: 16px;
+}
+
+.state-box {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.state-box b {
+  color: var(--text);
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.state-box.highlight {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(255, 42, 42, 0.2);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr 350px;
+  gap: 20px;
+}
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.stat.highlight .value {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.analysis-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.decision-panel {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.decision-panel.attack-mode {
+  border-color: var(--accent);
+  background: linear-gradient(180deg, rgba(255, 42, 42, 0.1) 0%, transparent 100%);
+}
+
+.action-text {
+  font-size: 48px;
+  margin: 20px 0;
+  color: var(--accent);
+}
+
+.radio-text {
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #00ffcc;
+  background: #051510;
+  padding: 20px;
+  border-left: 4px solid #00ffcc;
+}
+
+.loading-text {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 100px;
+}

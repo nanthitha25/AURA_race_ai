@@ -1,0 +1,28 @@
+{
+    "VER": {
+        "driving_style": {
+            "aggression": 0.92,
+            "consistency": 0.90
+        },
+        "pressure_behavior": {
+            "response": "increase_attack",
+            "mistake_probability": 0.08
+        },
+        "defense_style": {
+            "preferred": "late_braking"
+        }
+    },
+    "NOR": {
+        "driving_style": {
+            "aggression": 0.75,
+            "consistency": 0.82
+        },
+        "pressure_behavior": {
+            "response": "conservative",
+            "mistake_probability": 0.25
+        },
+        "defense_style": {
+            "preferred": "inside_line"
+        }
+    }
+}
