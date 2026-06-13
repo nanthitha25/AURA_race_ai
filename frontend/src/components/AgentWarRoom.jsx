@@ -17,7 +17,7 @@ export default function AgentWarRoom({ data }) {
           </div>
           <div className="agent-conf">
             <span>Confidence</span>
-            <span>{agents.strategy.confidence}%</span>
+            <span>{Number(agents.strategy.confidence).toFixed(1)}%</span>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function AgentWarRoom({ data }) {
           </div>
           <div className="agent-conf">
             <span>Mistake Prob</span>
-            <span>{agents.psychology.confidence}%</span>
+            <span>{Number(agents.psychology.confidence).toFixed(1)}%</span>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function AgentWarRoom({ data }) {
           </div>
           <div className="agent-conf">
             <span>Success Prob</span>
-            <span>{agents.overtake.confidence}%</span>
+            <span>{Number(agents.overtake.confidence).toFixed(1)}%</span>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function AgentWarRoom({ data }) {
           </div>
           <div className="agent-conf">
             <span>Safety Margin</span>
-            <span>{agents.risk.confidence}%</span>
+            <span>{Number(agents.risk.confidence).toFixed(1)}%</span>
           </div>
         </div>
 
