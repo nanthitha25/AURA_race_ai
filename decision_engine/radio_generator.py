@@ -12,7 +12,7 @@ def generate_radio_message(decision):
     if action == "ATTACK":
         message += f"Recommended: ATTACK. "
         message += f"Highest expected gain to P{expected_pos}. "
-        message += f"Overtake Probability: {overtake_prob}%. "
+        message += f"Overtake Probability: {overtake_prob:.1f}%. "
     elif action == "PRESSURE":
         message += f"Recommended: PRESSURE. "
         message += f"Too risky to attack. Apply pressure. "
@@ -21,5 +21,5 @@ def generate_radio_message(decision):
     else:
         message += f"Recommended: CONSERVE. "
         
-    message += f"Confidence: {confidence}%"
+    message += f"Confidence: {confidence:.1f}%"
     return message
